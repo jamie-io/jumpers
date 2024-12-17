@@ -11,7 +11,7 @@ const groundLevel = {
 export default class Game {
     constructor(scene) {
         this.scene = scene;
-        this.createPlane()
+        this.createPlane();
     }
 
     createPlane() {
