@@ -9,7 +9,7 @@ export default class Graphics {
         this.camera = new THREE.PerspectiveCamera(75, canvas.width / canvas.height, 0.1, 1000);
         this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas });
         this.renderer.setSize(canvas.width, canvas.height);
-
+        this.scene.background = new THREE.Color(0x87CEEB); // Light Blue
         this.game = new Game(this.scene); // Initialize the game objects
         this.camera.position.z = 5;
     }
