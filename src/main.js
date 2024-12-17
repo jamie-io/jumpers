@@ -1,6 +1,7 @@
-import './assets/main.css'
+import { createApp } from 'vue';
+import App from './App.vue';  // Corrected relative path
+import router from './router/index.js';
 
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use(router);  // Register the router
+app.mount('#app');
